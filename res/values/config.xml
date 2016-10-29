@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- link toi server service -->
+
+
+    <!-- <string name="Config_URL_Server">http://tranhuyhai.tk/yuppie_mysql/wsserver/index/json</string> -->
+<!--     <string name="Config_URL_Server">http://192.168.1.241/mydiningroom/WS/</string>  -->
+  <string name="Config_URL_Server">http://ap8.trust-touch.com.sg/mydiningroom/WS/</string> 
+    <!-- <string name="Config_URL_Server">http://192.168.1.137:8080/CandyISCWS/</string> -->
+    <!-- <string name="Config_URL_Server">http://192.168.1.137:8080/digipayWS_New/</string> -->
+    <!-- <string name="Config_URL_Server">http://saigonland24h.com/myservice/wsserver/index/json</string> -->
+    <string name="version_App">0.00.001</string>
+    <string name="versionManifest">0.01</string>
+    <string name="app_id">191296577740102</string>
+    <!-- <string name="googlemap_release_api_key_lv2">AIzaSyAaHx2OLkC77jnz7np-SXetdR3D7bpQbfA</string> -->
+     <string name="googlemap_release_api_key_lv2">AIzaSyCYGVOEj2fLhmnS8eANN9AjBdeRUX-qr1E</string>
+
+</resources>

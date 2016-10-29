@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+     android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/lDefineCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/dcname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edProducName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_productName" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dcquality"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dcname" >
+
+            <EditText
+                android:id="@+id/edProducQuality"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="@string/str_producQuantity" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dcunitprice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dcquality" >
+
+            <EditText
+                android:id="@+id/edUnitPrice"
+                android:layout_width="fill_parent"
+                  android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_unitPrice" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

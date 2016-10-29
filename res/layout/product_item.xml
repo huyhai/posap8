@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/imgPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_launcher"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/rContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgPic"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgPic" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="gfgfd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts13" />
+
+            <TextView
+                android:id="@+id/tvContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:maxLines="2"
+                android:text="gfgfd"
+                android:textColor="@drawable/text_cl"
+                android:textSize="@dimen/ts11" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rContent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rContent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgPic" >
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="gfgfd"
+                android:textColor="@drawable/bg_topCandy"
+                android:textSize="@dimen/ts15" />
+
+            <TextView
+                android:id="@+id/tvPriceSplash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/tvPrice"
+                android:maxLines="1"
+                android:text="gfgfd"
+                android:textColor="@drawable/text_cl"
+                android:textSize="@dimen/ts13" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

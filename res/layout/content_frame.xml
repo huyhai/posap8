@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="#112BCA" >
+
+        <Button
+            android:id="@+id/btnPrinter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/inventory_check"
+            android:text="@string/str_printer" />
+
+        <Button
+            android:id="@+id/btnViewReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnPrinter"
+            android:background="@drawable/inventory_check"
+            android:text="@string/str_viewReport"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnStyleAndRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnViewReport"
+            android:background="@drawable/inventory_check"
+            android:text="@string/str_inventoryCheck" />
+
+        <TextView
+            android:id="@+id/tbNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/btnReprintOrder"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnResendKitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnStyleAndRequest"
+            android:background="@drawable/inventory_check"
+            android:text="@string/str_stockInItem" />
+
+        <Button
+            android:id="@+id/btnReprintOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btnResendKitchen"
+            android:background="@drawable/inventory_check"
+            android:text="@string/str_manageItems" />
+
+        <Button
+            android:id="@+id/btnLogo"
+            android:layout_width="300dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNumber"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/rlTop" >
+
+        <LinearLayout
+            android:id="@+id/rlNumberButon"
+            android:layout_width="600dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/btnCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hold_bill"
+                android:text="@string/str_Menu"
+                android:textSize="@dimen/tsPos" />
+
+            <Button
+                android:id="@+id/btnSearchBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hold_bill"
+                android:text="@string/str_searchBill"
+                android:textSize="@dimen/tsPos" />
+
+            <Button
+                android:id="@+id/btnSplitBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hold_bill"
+                android:text="@string/str_holdBill"
+                android:textSize="@dimen/tsPos" />
+
+            <Button
+                android:id="@+id/btnPrintBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hold_bill"
+                android:text="Print Bill"
+                android:textSize="@dimen/tsChange" />
+
+            <Button
+                android:id="@+id/btnPrintNoSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/btnNote"
+                android:background="@drawable/hold_bill"
+                android:text="@string/str_printer"
+                android:textSize="@dimen/tsPos"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlNumber2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/rlNumberButon"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/btnNum0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/grey_0" />
+
+            <Button
+                android:id="@+id/btnNum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum0"
+                android:background="@drawable/grey_1" />
+
+            <Button
+                android:id="@+id/btnNum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum1"
+                android:background="@drawable/grey_2" />
+
+            <Button
+                android:id="@+id/btnNum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum2"
+                android:background="@drawable/grey_3" />
+
+            <Button
+                android:id="@+id/btnNum4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum3"
+                android:background="@drawable/grey_4" />
+
+            <Button
+                android:id="@+id/btnNum5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum4"
+                android:background="@drawable/grey5" />
+
+            <Button
+                android:id="@+id/btnNum6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum5"
+                android:background="@drawable/grey_6" />
+
+            <Button
+                android:id="@+id/btnNum7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum6"
+                android:background="@drawable/grey_7" />
+
+            <Button
+                android:id="@+id/btnNum8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum7"
+                android:background="@drawable/grey_8" />
+
+            <Button
+                android:id="@+id/btnNum9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum8"
+                android:background="@drawable/grey_9" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/btnNum9"
+                android:background="@drawable/red_delete" />
+
+            <Button
+                android:id="@+id/btnScan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hold_bill"
+                android:text="@string/str_scan"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCenter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlNumber" >
+
+        <RelativeLayout
+            android:id="@+id/rlListLeft"
+            android:layout_width="400dp"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:id="@+id/rlAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fcb131"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rlItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvItemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/str_itemName" />
+
+                    <RelativeLayout
+                        android:id="@+id/rla2"
+                        android:layout_width="3dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/black" >
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlUnitPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvUnitPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/str_unitPrice" />
+
+                    <RelativeLayout
+                        android:id="@+id/rla111"
+                        android:layout_width="3dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/black" >
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/str_qty" />
+
+                    <RelativeLayout
+                        android:id="@+id/rla11"
+                        android:layout_width="3dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/black" >
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlDiscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/str_discount" />
+
+                    <RelativeLayout
+                        android:id="@+id/rla1"
+                        android:layout_width="3dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/black" >
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlAmount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tvAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/str_amount" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvOrder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlAll"
+                android:layout_marginTop="3dp"
+                android:background="#ffe5bd"
+                android:listSelector="@color/milky" >
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/llTinhtoan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lvOrder"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rlSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="3dp" >
+
+                    <Button
+                        android:id="@+id/btnSubTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="@string/str_subTotal" />
+
+                    <Button
+                        android:id="@+id/btnSubTotalValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnSubTotal"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="0.00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSVcharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="3dp" >
+
+                    <Button
+                        android:id="@+id/btnSvC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="Service Charge"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btnSVCValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnSvC"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="0.00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlGST"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="3dp" >
+
+                    <Button
+                        android:id="@+id/btnGST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="GST" />
+
+                    <Button
+                        android:id="@+id/btnGSTValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnGST"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlBillDis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingRight="3dp" >
+
+                    <Button
+                        android:id="@+id/btnDisCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="@string/str_discount"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btnDisCountValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnDisCount"
+                        android:layout_marginTop="3dp"
+                        android:background="@color/bg_lv"
+                        android:text="0.00" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlTtA"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnTotal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:background="#fcb131"
+                        android:text="@string/str_totalAmount" />
+
+                    <Button
+                        android:id="@+id/btnTotalValue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btnTotal"
+                        android:layout_marginTop="3dp"
+                        android:background="#fcb131"
+                        android:text="0.00" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBelowList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llTinhtoan"
+                android:layout_marginTop="5dp" >
+
+                <RelativeLayout
+                    android:id="@+id/rlChild"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlRefundAbove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp" >
+
+                        <Button
+                            android:id="@+id/btnRefund"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/refund"
+                            android:text="New Order"
+                            android:textSize="@dimen/tsPos" />
+
+                        <Button
+                            android:id="@+id/btnPOC"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/btnRefund"
+                            android:background="@drawable/refund"
+                            android:text="@string/str_foc"
+                            android:textSize="@dimen/tsPos" />
+
+                        <Button
+                            android:id="@+id/btnSendOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/btnPOC"
+                            android:background="@drawable/refund"
+                            android:padding="5dp"
+                            android:text="@string/str_rePrint"
+                            android:textSize="@dimen/tsPos" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlRefundBelow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlRefundAbove"
+                        android:layout_marginTop="5dp" >
+
+                        <Button
+                            android:id="@+id/btnBillDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/refund"
+                            android:text="@string/str_billdiscount"
+                            android:textSize="@dimen/tsChange" />
+
+                        <Button
+                            android:id="@+id/btnEditPax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/btnBillDiscount"
+                            android:background="@drawable/refund"
+                            android:text="@string/str_unPaid"
+                            android:textSize="@dimen/tsPos" />
+
+                        <Button
+                            android:id="@+id/btnCancelBill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/btnEditPax"
+                            android:background="@drawable/payment"
+                            android:text="@string/str_cancelBill"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/tsPos" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnPlus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/rlRefundAbove"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/rlRefundAbove"
+                        android:background="@drawable/plain_button"
+                        android:text="ADD QUANTITY"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnMinus"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/rlRefundBelow"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/rlRefundBelow"
+                        android:background="@drawable/plain_button"
+                        android:text="LESS QUANTITY"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlListRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlListLeft"
+            android:paddingRight="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlgvItem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnSearchItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/search_item"
+                    android:text="@string/str_scan" />
+
+                <RelativeLayout
+                    android:id="@+id/rlgvItesm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/btnSearchItem"
+                    android:background="@drawable/ed_seachmain" >
+
+                    <EditText
+                        android:id="@+id/edSearch"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="10dp" />
+
+                    <EditText
+                        android:id="@+id/edSearch1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:paddingLeft="10dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:id="@+id/content_frame"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_above="@+id/btnSearchItem" >
+                </FrameLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pdBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pdBarMain"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/my_progress_indeterminate"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

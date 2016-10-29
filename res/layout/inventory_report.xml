@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rlAll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        android:paddingBottom="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_back" />
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imgBack"
+                android:text="@string/str_InventoryReport"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnPrintA4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/print_current_report"
+                android:text="@string/str_PrintCurrentReportA4"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnPrint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/btnPrintA4"
+                android:background="@drawable/print_current_report"
+                android:text="@string/str_PrintCurrentReport"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edInput"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rlTop"
+            android:layout_marginLeft="100dp"
+            android:background="@color/white"
+            android:hint="Input Name"
+            android:padding="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <ListView
+            android:id="@+id/lvDataItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edInput"
+            android:layout_alignRight="@+id/edInput"
+            android:layout_below="@+id/edInput"
+            android:background="@color/white"
+            android:visibility="gone" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/rlSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlTop"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="50dp"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/rlTren"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvFrom"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_From"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/edFromday"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvFrom"
+                    android:background="@color/white"
+                    android:hint="dd/mm/yyyy"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/edFromTime"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/edFromday"
+                    android:background="@color/white"
+                    android:hint="hh/mm"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlDuoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnSearch" >
+
+                <TextView
+                    android:id="@+id/tvTo"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/str_To"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/edToday"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvTo"
+                    android:background="@color/white"
+                    android:hint="dd/mm/yyyy"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/edToTime"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@+id/edToday"
+                    android:background="@color/white"
+                    android:hint="hh/mm"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rlTren"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/rlDuoi"
+                android:background="@drawable/search"
+                android:hint="@string/str_search"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/rlTop"
+            android:layout_marginTop="50dp"
+            android:paddingRight="50dp"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/llSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/rlCash"
+                    android:layout_width="500dp"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btnCash"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        android:text="@string/str_TOPMOVINGITEMS"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="500dp"
+                    android:layout_height="800dp"
+                    android:layout_below="@+id/rlCash"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <LinearLayout
+                        android:id="@+id/rlCards"
+                        android:layout_width="fill_parent"
+                        android:layout_height="800dp"
+                        android:orientation="horizontal" >
+
+                        <EditText
+                            android:id="@+id/btnItemi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="800dp"
+                            android:layout_weight="1"
+                            android:background="#ccccff"
+                            android:descendantFocusability="blocksDescendants"
+                            android:enabled="false"
+                            android:gravity="top|center"
+                            android:inputType="textMultiLine"
+                            android:paddingTop="5dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black" >
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/btnItem2i"
+                            android:layout_width="fill_parent"
+                            android:layout_height="800dp"
+                            android:layout_weight="2"
+                            android:background="@color/white"
+                            android:descendantFocusability="blocksDescendants"
+                            android:enabled="false"
+                            android:gravity="top|center"
+                            android:inputType="textMultiLine"
+                            android:paddingTop="5dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/llEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rlSearch"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlShow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="40dp"
+                android:layout_weight="3" >
+
+                <RelativeLayout
+                    android:id="@+id/rlShow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/rlOpen"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnOpenValue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnOpen"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnOpenValue"
+                            android:layout_weight="3"
+                            android:background="@color/blue"
+                            android:maxLines="2"
+                            android:text="@string/str_StockInhand"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rlGross"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/rlOpen"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnGrossValue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnGross"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnGrossValue"
+                            android:layout_weight="3"
+                            android:background="@color/blue"
+                            android:maxLines="2"
+                            android:text="@string/str_StockIn"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rlItemSale"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/rlGross"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnItemSaleValue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnItemSale"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnItemSaleValue"
+                            android:layout_weight="3"
+                            android:background="@color/blue"
+                            android:maxLines="2"
+                            android:text="@string/str_StockOut"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rlTotalCash"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/rlItemSale"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnTotalCashValue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnTotalCash"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnTotalCashValue"
+                            android:layout_weight="3"
+                            android:background="@color/blue"
+                            android:maxLines="2"
+                            android:text="@string/str_BalanceStock"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlShow2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlShow1"
+                    android:layout_marginTop="50dp" >
+
+                    <LinearLayout
+                        android:id="@+id/rlOpen1"
+                        android:layout_width="250dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnNumSaleValue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnNumSale"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnNumSaleValue"
+                            android:layout_weight="3"
+                            android:background="@color/blue"
+                            android:maxLines="2"
+                            android:text="@string/str_AverageUnitCost"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rlItemSale1"
+                        android:layout_width="250dp"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/rlOpen1"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnBillDisValue"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="0"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnBillDis"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnBillDisValue"
+                            android:layout_weight="3"
+                            android:background="@color/blue"
+                            android:maxLines="2"
+                            android:text="@string/str_StockValue"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

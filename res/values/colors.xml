@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="bg_topCandy">#f47056</drawable>
+    <drawable name="bg_slide">#2f3d4c</drawable>
+    <drawable name="bg_item_slide_choose">#2a3744</drawable>
+    <drawable name="bg_item_slide_none">#2c3948</drawable>
+    <drawable name="color_page">#ff7f66</drawable>
+    <drawable name="text_cl">#62686c</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#50FF0000</drawable>
+    <drawable name="transparent">#00000000</drawable>
+     <drawable name="bg_appi">#eaedf1</drawable>
+      <drawable name="bg_callus">#f4f4f4</drawable>
+
+    <color name="tblheader">#525453</color>
+    <color name="tblrow">#D8DAD9</color>
+    <color name="yellow1">#c54e14</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#ffd800</color>
+    <color name="purple">#660033</color>
+    <color name="milky">#C4C4C4</color>
+    <color name="pink">#ff6b6b</color>
+    <color name="lightgrey">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="red">#FF0000</color>
+    <color name="darkgrey">#303030</color>
+    <color name="darkgreylight">#645959</color>
+    <color name="lightblack">#404040</color>
+    <color name="darkorange">#F88017</color>
+    <color name="orange">#d4762f</color>
+    <color name="green">#3CB371</color>
+    <color name="green2">#669933</color>
+    <color name="bg_lvtitle">#fcb131</color>
+      <color name="bg_lv">#ffe5bd</color>
+
+</resources>

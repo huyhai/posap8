@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlBig"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rlAll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlTop1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#75cdf3" >
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="@string/str_userlogin"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/imgLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_reverse1"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edCashIn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:hint="Input Cash"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:text="" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rlTop"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rlUser"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <GridView
+                    android:id="@+id/gvUser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:listSelector="@color/milky"
+                    android:numColumns="2"
+                    android:scrollbars="vertical"
+                    android:verticalSpacing="1dp" >
+                </GridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lrVV"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/edInput"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edInput"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/user_profile_confirm"
+                    android:text="@string/str_confirm"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/btnOk"
+                    android:layout_centerHorizontal="true"
+                     android:layout_marginTop="5dp"
+                    android:background="@drawable/user_profile_confirm"
+                    android:text="Close"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

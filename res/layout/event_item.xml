@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rlAll"
+            android:layout_width="fill_parent"
+            android:layout_height="419dp"
+            android:gravity="center"
+            android:padding="30dp" >
+
+            <ImageView
+                android:id="@+id/imgPic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/photo"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/imgPic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:id="@+id/rContent1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgPic1" >
+
+                <TextView
+                    android:id="@+id/tvTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="@string/str_chooseReport"
+                    android:textSize="@dimen/ts13" />
+
+                <TextView
+                    android:id="@+id/tvNameImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvTitle1"
+                    android:textColor="@drawable/text_cl"
+                    android:textSize="@dimen/ts11" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlColor"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rContent1" >
+
+                <TextView
+                    android:id="@+id/tvVisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:textSize="@dimen/ts13" />
+
+                <Spinner
+                    android:id="@+id/spColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvVisible"
+                    android:textColor="@drawable/text_cl"
+                    android:textSize="@dimen/ts11" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/spColor"
+                    android:checked="true"
+                    android:text="@string/str_active" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_inavtice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkbox_active"
+                    android:text="@string/str_inActive" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlTs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlColor" >
+
+                <TextView
+                    android:id="@+id/tvVisible1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="@string/str_TextSize"
+                    android:textSize="@dimen/ts13" />
+
+                <Spinner
+                    android:id="@+id/spTs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvVisible1"
+                    android:textColor="@drawable/text_cl"
+                    android:textSize="@dimen/ts11" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlTs" >
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="@string/str_groupName"
+                    android:textSize="@dimen/ts13" />
+
+                <EditText
+                    android:id="@+id/edName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvTitle"
+                    android:textColor="@drawable/text_cl"
+                    android:textSize="@dimen/ts11" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rNameChina"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rContent" >
+
+                <TextView
+                    android:id="@+id/tvnameChina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="@string/str_groupNameChines"
+                    android:textSize="@dimen/ts13" />
+
+                <EditText
+                    android:id="@+id/edNameChina"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvnameChina"
+                    android:textColor="@drawable/text_cl"
+                    android:textSize="@dimen/ts11" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rGroupCode"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/rNameChina" >
+
+                <TextView
+                    android:id="@+id/tvGroupCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLines="1"
+                    android:text="@string/str_groupCode"
+                    android:textSize="@dimen/ts13" />
+
+                <EditText
+                    android:id="@+id/edGroupCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvGroupCode"
+                    android:textColor="@drawable/text_cl"
+                    android:textSize="@dimen/ts11" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

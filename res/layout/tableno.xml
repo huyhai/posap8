@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/ltableno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/tableno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:gravity="top"
+            android:hint="@string/str_inputTable"
+            >
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

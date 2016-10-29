@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rlAll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black" >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/icon_back" />
+
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imgBack"
+                android:text="@string/str_SplitBill"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/print_current_report"
+                android:text="@string/str_Confirm"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/btnConfirm"
+                android:background="@drawable/print_current_report"
+                android:text="Split"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnAddBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/btnCancel"
+                android:background="@drawable/print_current_report"
+                android:text="@string/str_addBill"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rlTop"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/rlTrai"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/rlsss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcb131"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlItemName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tvItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_itemName" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlUnitPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tvUnitPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_unitPrice" />
+
+                        <RelativeLayout
+                            android:id="@+id/rla111"
+                            android:layout_width="3dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/black" >
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tvQty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_qty" />
+
+                        <RelativeLayout
+                            android:id="@+id/rla11"
+                            android:layout_width="3dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/black" >
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tvDiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_discount" />
+
+                        <RelativeLayout
+                            android:id="@+id/rla1"
+                            android:layout_width="3dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/black" >
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlAmount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <RelativeLayout
+                            android:id="@+id/rla1ss"
+                            android:layout_width="3dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/black" >
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tvAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_amount" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lvOrder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/rlsss"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffe5bd"
+                    android:listSelector="@color/milky" >
+                </ListView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFai"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_weight="1.4" >
+
+                <LinearLayout
+                    android:id="@+id/rlsss1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcb131"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/rlBillList"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tvBillList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_itemName"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlTotalAmount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tvTotalAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="@string/str_unitPrice"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RelativeLayout
+                            android:id="@+id/rla1s11"
+                            android:layout_width="3dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/black" >
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lvBill"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/rlsss1"
+                    android:layout_marginTop="3dp"
+                    android:background="#ffe5bd"
+                    android:listSelector="@color/milky" >
+                </ListView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

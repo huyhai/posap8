@@ -1,0 +1,15 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+    <dimen name="ts15">21sp</dimen>
+    <dimen name="ts17">22sp</dimen>
+    <dimen name="ts20">25sp</dimen>
+    <dimen name="ts13">18sp</dimen>
+     <dimen name="ts11">16sp</dimen>
+     <dimen name="ts10">15sp</dimen>
+       <dimen name="ts9">14sp</dimen>
+         <dimen name="ts8">13sp</dimen>
+</resources>

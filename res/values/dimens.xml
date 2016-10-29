@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">1dp</dimen>
+    <dimen name="ts15">15sp</dimen>
+    <dimen name="ts17">17sp</dimen>
+    <dimen name="ts20">20sp</dimen>
+    <dimen name="ts13">13sp</dimen>
+     <dimen name="ts11">11sp</dimen>
+     <dimen name="ts10">10sp</dimen>
+       <dimen name="ts9">9sp</dimen>
+         <dimen name="ts8">8sp</dimen>
+          <dimen name="tsPos">13sp</dimen>
+          <dimen name="tsChange">12sp</dimen>
+           <dimen name="marrginStockin">100dp</dimen>
+             <dimen name="marrginLRlTop1">30dp</dimen>
+              <dimen name="marrginLRlTop2">8dp</dimen>
+              <dimen name="marrginRR55">50dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+</resources>

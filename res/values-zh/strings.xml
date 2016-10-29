@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="planets_array">
+        <item>红色</item>
+        <item>黄色</item>
+        <item>蓝色</item>
+        <item>绿色</item>
+        <item>黑色</item>
+        <item>白色</item>
+        <item>品红色</item>
+        <item>青色</item>
+    </string-array>
+    <string-array name="size_array">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+
+    <string name="app_name">AP8</string>
+    <string name="str_switchLang">English</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="datetime">日期/时间</string>
+    <string name="str_userlogin">用户-登录</string>
+    <string name="str_companylogo">公司标志</string>
+    <string name="str_counter">柜台</string>
+    <string name="str_userprofile">用户简介</string>
+    <string name="str_companyProfile">公司简介</string>
+    <string name="str_confirm">确认</string>
+    <string name="str_delete">删除</string>
+    <string name="str_printBill">打印单</string>
+    <string name="str_username">用户名</string>
+    <string name="str_changeuser">更改用户</string>
+    <string name="str_Menu">菜单</string>
+    <string name="str_itemName">项目名称</string>
+    <string name="str_chooseMode">选择模式</string>
+    <string name="str_groupName">组名</string>
+    <string name="str_groupNameChines">中文组名</string>
+    <string name="str_groupCode">组码</string>
+    <string name="str_group">组</string>
+    <string name="str_producQuantity">产品质量</string>
+    <string name="str_receipt">收据</string>
+    <string name="str_fillNote">在此填写事项</string>
+    <string name="str_enterYourSearch">输入您的搜索</string>
+    <string name="str_search">搜索</string>
+    <string name="str_change">更改</string>
+    <string name="str_chooseReport">选择报告</string>
+    <string name="str_managerItem">管理项目</string>
+    <string name="str_stockInItem">进货项目</string>
+    <string name="str_inventoryCheck">库存盘点</string>
+    <string name="str_viewReport">查看报告</string>
+    <string name="str_printer">打印机</string>
+    <string name="str_custom">自定</string>
+    <string name="str_searchBill">找单</string>
+    <string name="str_holdBill">保留单</string>
+    <string name="str_splitBill">拆分单</string>
+    <string name="str_SplitBill">拆分单</string>
+    <string name="str_addBill">加单</string>
+    <string name="str_sendOrder">送订单</string>
+    <string name="str_selectQty">选择数量</string>
+    <string name="str_rePrint">重印单</string>
+    <string name="str_note">笔录</string>
+    <string name="str_scan">扫描</string>
+    <string name="str_takeAway">打包</string>
+    <string name="str_submitOrder">提交订单</string>
+    <string name="str_itemCode">项目代码</string>
+    <string name="str_items">项目</string>
+    <string name="str_unitPrice">单价</string>
+    <string name="str_qty">数量</string>
+    <string name="str_discount">折扣</string>
+    <string name="str_amount">价钱</string>
+    <string name="str_refund">退款</string>
+    <string name="str_foc">免费</string>
+    <string name="str_billdiscount">单折扣</string>
+    <string name="str_editSale">编辑销售</string>
+    <string name="str_unPaid">未付</string>
+    <string name="str_cancelBill">取消单</string>
+    <string name="str_subTotal">小计</string>
+    <string name="str_totalAmount">总金额</string>
+    <string name="str_payment">付款</string>
+    <string name="str_nettsale">实价销售</string>
+    <string name="str_Open">打开</string>
+    <string name="str_plus">加量</string>
+    <string name="str_minus">减量</string>
+    <string name="str_SvC">服务费</string>
+    <string name="str_openCash">开钱箱</string>
+    <string name="str_enterYourSearchItem">输入您的搜索项目</string>
+    <string name="str_searchItem">搜索项目</string>
+    <string name="str_confirmWReceipt">确认收据</string>
+    <string name="str_defineCustom">定义自定项目</string>
+    <string name="str_productName">产品名称</string>
+    <string name="str_quantity">数量</string>
+    <string name="str_cancel">取消</string>
+    <string name="str_enterReceiptNum">输入收据号码</string>
+    <string name="str_receiptNo">收据号码</string>
+    <string name="str_reasonRefund">退款理由</string>
+    <string name="str_deleteItem">删除项目</string>
+    <string name="str_manageItems">管理项目</string>
+    <string name="str_itemList">项目列表</string>
+    <string name="str_choosePicture">选择图片</string>
+    <string name="str_color">颜色</string>
+    <string name="str_active">活跃</string>
+    <string name="str_inActive">不活跃</string>
+    <string name="str_itemGroup">项目组</string>
+    <string name="str_chineseName">中文名</string>
+    <string name="str_barCode">条形码</string>
+    <string name="str_costPrice">成本价</string>
+    <string name="str_price">价格</string>
+    <string name="str_price2">价格2</string>
+    <string name="str_SpecialPrice">特惠价</string>
+    <string name="str_LowStockAlert">低存通知</string>
+    <string name="str_DisplayOrder">显示顺序</string>
+    <string name="str_BaseStock">础货</string>
+    <string name="str_GroupList">组列表</string>
+    <string name="str_PrinterSetting">打印机设置</string>
+    <string name="str_Printer1">打印机#1</string>
+    <string name="str_Copies">复本</string>
+    <string name="str_Organisation">组织</string>
+    <string name="str_CompanyName">公司名称</string>
+    <string name="str_Address">地址</string>
+    <string name="str_Telephone">电话</string>
+    <string name="str_Facsimile">传真</string>
+    <string name="str_Email">电子邮件</string>
+    <string name="str_Website">网站</string>
+    <string name="str_CompanyRegNo">公司注册。号</string>
+    <string name="str_GSTNo">商品税</string>
+    <string name="str_ReceiptFooter">收据页脚</string>
+    <string name="str_pass">密码</string>
+    <string name="str_SalesReport">销售报告</string>
+    <string name="str_InventoryReport">库存报告</string>
+    <string name="str_PrintCurrentReport">打印现报告</string>
+    <string name="str_PrintCurrentReportA4">打印现报告(A4)</string>
+    <string name="str_EndShift">端移动</string>
+    <string name="str_From">从</string>
+    <string name="str_To">至</string>
+    <string name="str_OpeningCash">开始现金</string>
+    <string name="str_GrossSale">总售</string>
+    <string name="str_ItemSale">项目出售</string>
+    <string name="str_TotalCash">总现金</string>
+    <string name="str_NumberofSale">销售数量</string>
+    <string name="str_ItemDiscount">项目折扣</string>
+    <string name="str_SaleRefund">出售退款</string>
+    <string name="str_CASH">现金</string>
+    <string name="str_CARDS">卡</string>
+    <string name="str_UNPAIDBILL">未付单</string>
+    <string name="str_StockInhand">现货在手</string>
+    <string name="str_StockIn">进货</string>
+    <string name="str_StockOut">出货</string>
+    <string name="str_BalanceStock">剩货</string>
+    <string name="str_AverageUnitCost">平均单成本</string>
+    <string name="str_StockValue">货价</string>
+    <string name="str_TOPMOVINGITEMS">顶运动项目</string>
+    <string name="str_TICKETREPORT">门票报告</string>
+    <string name="str_BillNo">单号</string>
+    <string name="str_CloseSession">关阶段</string>
+    <string name="str_CreditCard">信用卡</string>
+    <string name="str_User">用户</string>
+    <string name="str_SendtoPrinter">发送到打印机</string>
+    <string name="str_phantramDis">% 折扣</string>
+    <string name="str_phantramDolla">$ 折扣</string>
+    <string name="str_YouChoose">你选择</string>
+    <string name="str_ChooseReport">请选报告</string>
+    <string name="str_ChooseMode">请选模式</string>
+    <string name="str_TextSize">文字大小</string>
+    <string name="str_Small">小</string>
+    <string name="str_Medium">中</string>
+    <string name="str_Large">大</string>
+    <string name="str_InputName">输入名字</string>
+    <string name="str_Back">回去</string>
+    <string name="str_PrintPreview">打印预览</string>
+    <string name="str_PrintNumber">打印数量</string>
+    <string name="str_ManageGroup">管理组</string>
+    <string name="str_Red">红色</string>
+    <string name="str_Yellow">黄色</string>
+    <string name="str_Blue">蓝色</string>
+    <string name="str_Green">绿色</string>
+    <string name="str_Black">黑色</string>
+    <string name="str_White">白色</string>
+    <string name="str_Magenta">品红色</string>
+    <string name="str_Cyan">青色</string>
+    <string name="str_Edit">编辑</string>
+    
+    <string name="str_Reserved">保留</string>
+    <string name="str_Available">可用</string>
+    <string name="str_Occupied">已占</string>
+    <string name="str_MutipleBill">多单</string>
+    <string name="str_RequestForPayment">买单</string>
+    <string name="str_Refresh">刷新</string>
+    <string name="str_SwitchLang">English</string>
+    
+    <string name="str_selectedTable">已选择桌号</string>
+    <string name="str_joinTable">合并桌位</string>
+    <string name="str_moveTable">移动桌位</string>
+    <string name="str_inputTable">输入桌号</string>
+    <string name="str_paxNo">人数</string>
+    
+    <string name="str_styleRequest">风格和要求</string>
+    <string name="str_View">查看</string>
+    <string name="str_standBy">待命</string>
+    <string name="str_small">小</string>
+    <string name="str_smallMedium">小中</string>
+    <string name="str_medium">中</string>
+    <string name="str_mediumLarge">中大</string>
+    <string name="str_large">大</string>
+    <string name="str_weight">重量:</string>
+    <string name="str_Style">风格</string>
+    <string name="str_No">无</string>
+    <string name="str_Less">少</string>
+    <string name="str_More">多</string>
+    <string name="str_Only">只有</string>
+    <string name="str_servingRequest">服务要求</string>
+    <string name="str_Add">加</string>
+    <string name="str_Replace">换</string>
+    <string name="str_Confirm">确认</string>
+    <string name="str_Cancel">取消</string>
+    <string name="str_Remove">移除</string>
+
+</resources>
